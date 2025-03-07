@@ -19,7 +19,7 @@ export function Sidebar() {
 
   return (
     <div
-      className={`relative bg-[#1A1A1A] p-3 border-r border-[#FFFFFF26] transition-all duration-300 ease-in-out ${
+      className={`relative bg-[#1A1A1A] p-3  transition-all duration-300 ease-in-out ${
         isCollapsed ? "w-14" : "w-64"
       }`}
     >
@@ -117,7 +117,7 @@ export function Sidebar() {
             <p className="text-sm text-[#868686]">
               Make the most of all features!
             </p>
-            <Button className="w-full border border-[#F37F0C] text-[#F37F0C] bg-transparent rounded-full text-[14px] font-semibold mt-3 hover:bg-[#F37F0C] hover:text-white transition-colors">
+            <Button className="w-full  py-[10.5px] border border-[#F37F0C] text-white bg-transparent rounded-full text-sm font-semibold mt-3  hover:text-[#F37F0C] transition-colors">
               Upgrade plan
             </Button>
           </div>
