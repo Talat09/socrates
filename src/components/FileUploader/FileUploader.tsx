@@ -26,12 +26,16 @@ const FileUploader = () => {
             <File className="text-blue-500 w-5 h-5" />
           )}
           <span className="text-sm ml-2">{file.name}</span>
-          <Checkbox className="border-gray-500 ml-3.5 mr-1.5" />
+          <Checkbox
+            className="border-gray-500 ml-3.5 mr-1.5"
+            aria-label={`Remove ${file.name}`}
+          />
           <span className="text-sm">Force OCR</span>
           <Info className="w-4 h-4 text-gray-400  ml-1.5 " />
           <X
             className="cursor-pointer w-4 h-4 text-gray-400 hover:text-white ml-3.5"
             onClick={() => removeFile(index)}
+            area-label="remove file button"
           />
         </div>
       ))}

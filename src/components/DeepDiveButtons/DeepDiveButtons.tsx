@@ -13,6 +13,7 @@ const DeepDiveButtons = () => {
       <Button
         variant="outline"
         className="border border-[#FB9937] bg-transparent text-white px-[101px] py-[19px] rounded-full"
+        area-label="Start button"
       >
         Start
       </Button>
@@ -23,6 +24,7 @@ const DeepDiveButtons = () => {
       <div className="relative">
         <Button
           variant="default"
+          area-label="Start with Deep Dive"
           className="bg-gradient-to-t from-[#FB9937] to-[#FFBF00]  text-black px-6  rounded-full flex items-center pl-[22.5px] pr-[30px] py-[19px]"
         >
           <Sparkles className="w-6 h-6 text-white" />

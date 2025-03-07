@@ -30,6 +30,7 @@ export function Sidebar() {
             <button
               onClick={toggleSidebar}
               className="hover:opacity-80 transition-opacity cursor-pointer"
+              area-label="toggle menu"
             >
               <Image
                 src={ToggleIcon}
@@ -42,10 +43,16 @@ export function Sidebar() {
 
           {/* Collapsed buttons */}
           <div className="flex flex-col items-center gap-4 mt-6">
-            <Button className="w-8 h-8 rounded-full border border-[#FFFFFF26] p-0 flex items-center justify-center">
+            <Button
+              className="w-8 h-8 rounded-full border border-[#FFFFFF26] p-0 flex items-center justify-center"
+              area-label="add icon"
+            >
               <Image src={PlusIcon} width={16} height={16} alt="Plus Icon" />
             </Button>
-            <Button className="w-8 h-8 rounded-full bg-[#FFFFFF26] p-0 flex items-center justify-center">
+            <Button
+              className="w-8 h-8 rounded-full bg-[#FFFFFF26] p-0 flex items-center justify-center"
+              area-label="add icon"
+            >
               <Image src={PlusIcon} width={16} height={16} alt="Plus Icon" />
             </Button>
           </div>
@@ -87,6 +94,7 @@ export function Sidebar() {
             <button
               onClick={toggleSidebar}
               className="hover:opacity-80 transition-opacity cursor-pointer"
+              area-label="toggle menu"
             >
               <Image
                 src={ToggleIcon}
@@ -100,11 +108,17 @@ export function Sidebar() {
 
         {/* add folder and create chat */}
         <div className="mt-[32px]">
-          <Button className="flex items-center text-sm font-semibold text-white gap-1 w-full rounded-full border border-[#FFFFFF26] py-[10px] hover:bg-[#FFFFFF12] transition-colors">
+          <Button
+            className="flex items-center text-sm font-semibold text-white gap-1 w-full rounded-full border border-[#FFFFFF26] py-[10px] hover:bg-[#FFFFFF12] transition-colors"
+            area-label="Add folder"
+          >
             <Image src={PlusIcon} width={20} height={20} alt="Plus Icon" />
             Add folder
           </Button>
-          <Button className="flex items-center text-sm font-semibold text-white gap-1 w-full rounded-full py-[10px] mt-[22.5px] bg-[#FFFFFF26] hover:bg-[#FFFFFF33] transition-colors">
+          <Button
+            className="flex items-center text-sm font-semibold text-white gap-1 w-full rounded-full py-[10px] mt-[22.5px] bg-[#FFFFFF26] hover:bg-[#FFFFFF33] transition-colors"
+            area-label="Create chat"
+          >
             <Image src={PlusIcon} width={20} height={20} alt="Plus Icon" />
             Create chat
           </Button>
@@ -117,7 +131,10 @@ export function Sidebar() {
             <p className="text-sm text-[#868686]">
               Make the most of all features!
             </p>
-            <Button className="w-full  py-[10.5px] border border-[#F37F0C] text-white bg-transparent rounded-full text-sm font-semibold mt-3  hover:text-[#F37F0C] transition-colors">
+            <Button
+              className="w-full  py-[10.5px] border border-[#F37F0C] text-white bg-transparent rounded-full text-sm font-semibold mt-3  hover:text-[#F37F0C] transition-colors"
+              area-label="Upgrade plan"
+            >
               Upgrade plan
             </Button>
           </div>
